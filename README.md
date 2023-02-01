@@ -7,3 +7,4 @@
 - [ ] RateLimit (Criar rateLimit de 10 por minuto)
 - [ ] TwoFactor (Autenticacao em 2 fatores)
 - [ ] Websocket
+- [ ] Multitenant
