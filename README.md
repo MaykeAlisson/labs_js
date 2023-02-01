@@ -1,15 +1,9 @@
 # MaykeLabs JS
 
-- ### Comunicação RabbitMQ
-        - Consumir fila
-        - Publicar em fila
-
-- ### Comunicação Redis
-        - Gravar registro com tempo de espiração
-
-- ### Schedule jobs
-        - Criar job para rodar automaticamente
-
-- ### Arquivo
-        - Leitura de csv
-        - Mover arquivo
+- [x] RabbitMQ (Consumir/Publicar)
+- [ ] Redis (Criar cache com tempo)
+- [ ] Schedule (Criar job de hora em hora)
+- [ ] File (Ler e mover CSV)
+- [ ] RateLimit (Criar rateLimit de 10 por minuto)
+- [ ] TwoFactor (Autenticacao em 2 fatores)
+- [ ] Websocket
