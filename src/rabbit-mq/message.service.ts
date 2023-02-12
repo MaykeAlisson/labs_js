@@ -8,7 +8,7 @@ export class MessageService {
 
   @RabbitSubscribe({
     exchange: 'labs',
-    routingKey: 'posts-route',
+    routingKey: 'labs.posts-route',
     queue: 'labs_posts',
   })
   public async listenerQueue(msg: any, amqpMsg: ConsumeMessage) {
@@ -16,7 +16,7 @@ export class MessageService {
     console.log(`Message ${JSON.stringify(msg)}`);
   }
   async publishEvent() {
-    this.amqpConnection.publish('labs', 'subscribes-route', {
+    this.amqpConnection.publish('labs', 'labs.subscribes-route', {
       msg: 'hello world subscribes',
     });
   }
